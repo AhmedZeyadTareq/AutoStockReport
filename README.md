@@ -80,8 +80,8 @@ Run the Streamlit application from your terminal:
 
 ```Bash
 streamlit run AutoStockReport.py
-The application will open in your web browser.
 ```
+The application will open in your web browser.
 Enter the stock symbols you want to analyze in the text input field, separated by commas (e.g., AAPL, GOOGL, TSLA).
 
 Click the "🚀 Start Analysis" button.
