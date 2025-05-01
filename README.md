@@ -102,7 +102,6 @@ Customizable: Easily adaptable to include more financial metrics, different time
 
 
 ## 👨‍💻 Developed By
-
 **Ahmed Zeyad Tareq**  
 📌 Data Scientist & AI Developer | 🎓 Master of AI Engineering
 - 📞 WhatsApp: +905533333587 
