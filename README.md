@@ -100,13 +100,13 @@ AI-Powered Insights: Leverages the power of large language models via AutoGen fo
 Customizable: Easily adaptable to include more financial metrics, different time periods, or additional data sources by modifying agent tasks.
 
 
+
 ## 👨‍💻 Developed By
-**Eng. Ahmed Zeyad Tareq**  
-📌 Data Scientist | 🎓 Master of AI Engineering
-- 📞 WhatsApp: +905533333587
-- 📷 Instagram: [@adlm7](https://instagram.com/adlm7)
-- 🔗 LinkedIn: [AhmedZeyadTareq](https://www.linkedin.com/in/ahmed-zeyad-tareq)
-- 📊 Kaggle: [AhmedZeyadTareq](https://www.kaggle.com/ahmedzeyadtareq)
+
+**Ahmed Zeyad Tareq**  
+📌 Data Scientist & AI Developer | 🎓 Master of AI Engineering
+- 📞 WhatsApp: +905533333587 
+- [GitHub](https://github.com/AhmedZeyadTareq) | [LinkedIn](https://www.linkedin.com/in/ahmed-zeyad-tareq) | [Kaggle](https://www.kaggle.com/ahmedzeyadtareq)
 
 
 ## 📄 License
