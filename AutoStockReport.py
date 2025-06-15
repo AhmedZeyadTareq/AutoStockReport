@@ -14,7 +14,7 @@ except:
 
 
 llm_config = {
-    "model": "gpt-4.1-mini",
+    "model": "gpt-4.1",
     "api_key": openai_key
 }
 
