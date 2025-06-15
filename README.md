@@ -32,15 +32,14 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+### 2. to get Directory
 ```Bash
-python -m venv venv
-source venv/bin/activate   # On Windows use `.\venv\Scripts\activate`
+cd AutoStockReport
 ```
 
-### 3. Install Python Libraries
+### 3. Run The Code
 ```Bash
-pip install -r requirements.txt
+streamlit run AutoStockReport.py
 ```
 (Note: You will need to create a requirements.txt file containing the required libraries: streamlit, autogen, python-dotenv, pandas, yfinance, matplotlib - based on the code's likely dependencies for fetching/plotting stock data, although not all are explicitly imported in the provided snippet, they are necessary for the tasks described).
 
