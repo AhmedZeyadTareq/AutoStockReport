@@ -13,29 +13,10 @@ except:
     openai_key = os.getenv("OPENAI_API_KEY")
 
 
-# llm_config = {
-#     "model": "gpt-4.1",
-#     "api_key": openai_key
-# }
-
-
-
 llm_config = {
-    "config_list": [  # This is the required top-level key
-        {
-            "model": "gpt-4.1-mini",  # Must be a valid model name
-            "api_key": openai_key,   # Your actual API key
-            "base_url": None,        # Optional: if using a different endpoint
-            "api_type": "open_ai",  # Optional: "azure" if using Azure OpenAI
-            "api_version": None     # Optional: for Azure
-        }
-    ],
-    "temperature": 0.3,             # Optional parameters
-    "timeout": 120,
-    "max_retries": 3,
-    "cache_seed": 42
+    "model": "gpt-4.1",
+    "api_key": openai_key
 }
-
 
 
 st.set_page_config(page_title="📊 AutoStock Insight", layout="centered")
