@@ -13,11 +13,27 @@ except:
     openai_key = os.getenv("OPENAI_API_KEY")
 
 
-llm_config = {
-    "model": "gpt-4.1",
-    "api_key": openai_key
-}
+# llm_config = {
+#     "model": "gpt-4.1",
+#     "api_key": openai_key
+# }
 
+
+# Update your llm_config with aggressive rate limit handling
+llm_config = {
+    "config_list": [
+        {
+            "model": "gpt-4.1-mini",
+            "api_key": openai_key,
+            "max_retries": 3,  # Increased from default
+            "retry_wait_time": 30,  # Wait longer between retries
+            "timeout": 120,  # Longer timeout
+        }
+    ],
+    "cache_seed": 42,  # For reproducibility
+    "temperature": 0.3,
+    "request_timeout": 60,  # Separate timeout for requests
+}
 
 st.set_page_config(page_title="📊 AutoStock Insight", layout="centered")
 st.title("📊 AI Financial Report Generator")
