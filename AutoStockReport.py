@@ -19,21 +19,24 @@ except:
 # }
 
 
-# Update your llm_config with aggressive rate limit handling
+
 llm_config = {
-    "config_list": [
+    "config_list": [  # This is the required top-level key
         {
-            "model": "gpt-4.1-mini",
-            "api_key": openai_key,
-            "max_retries": 3,  # Increased from default
-            "retry_wait_time": 30,  # Wait longer between retries
-            "timeout": 120,  # Longer timeout
+            "model": "gpt-4.1-mini",  # Must be a valid model name
+            "api_key": openai_key,   # Your actual API key
+            "base_url": None,        # Optional: if using a different endpoint
+            "api_type": "open_ai",  # Optional: "azure" if using Azure OpenAI
+            "api_version": None     # Optional: for Azure
         }
     ],
-    "cache_seed": 42,  # For reproducibility
-    "temperature": 0.3,
-    "request_timeout": 60,  # Separate timeout for requests
+    "temperature": 0.3,             # Optional parameters
+    "timeout": 120,
+    "max_retries": 3,
+    "cache_seed": 42
 }
+
+
 
 st.set_page_config(page_title="📊 AutoStock Insight", layout="centered")
 st.title("📊 AI Financial Report Generator")
