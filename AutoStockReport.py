@@ -4,9 +4,13 @@ import autogen
 from dotenv import load_dotenv
 from datetime import datetime
 
-#
-load_dotenv()
-openai_key = os.getenv("OPENAI_API_KEY")
+# Get API key - handle both local and Streamlit Cloud environments
+try:
+    openai_key = st.secrets["OPENAI_API_KEY"]
+except:
+    from dotenv import load_dotenv
+    load_dotenv()
+    openai_key = os.getenv("OPENAI_API_KEY")
 
 
 llm_config = {
