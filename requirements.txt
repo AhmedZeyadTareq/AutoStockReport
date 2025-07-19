@@ -2,4 +2,4 @@ streamlit
 python-dotenv
 autogen
 openai
-pyautogen
+ag2
